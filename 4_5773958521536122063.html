@@ -1,0 +1,33 @@
+<html>
+ <head>
+  <meta charset="utf-8">
+   <title> factorial</title>
+</head>
+<body>
+ <form action="#" method="GET">
+    number
+ <input type="text" name="firstnum" value ="" >
+<br>
+<br>
+factorial
+ <input type ="text" name="out" value="">
+<br>
+<br>
+ <input type ="button"name ="button"value="Get the factorial" 
+ onclick="myfun(this.form)">
+  </form>
+  <script >
+  var i=1;
+  var fact=1;
+    function myfun(form){
+      var num=form.firstnum.value;
+      while(i <= num) {
+        fact=fact*i;
+      i++;
+        
+      }
+        form.out.value =fact;
+    }
+  </script>
+  </body>
+  </html>
